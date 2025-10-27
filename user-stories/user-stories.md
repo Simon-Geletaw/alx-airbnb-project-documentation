@@ -1,72 +1,37 @@
-# 🏠 Airbnb Clone — Use Case Documentation
+# 🧩 User Stories — Airbnb Clone Project
 
-## 🎯 System Name
-**Airbnb Clone Platform**
-
----
-
-## 👥 Actors
-- **Guest/User** — Can browse, book, and review properties.  
-- **Host** — Can list, edit, and manage their property listings.  
-- **Admin** — Manages the platform, users, properties, and bookings.
+## 👥 Overview
+This section outlines the main **user stories** for the Airbnb Clone Platform, representing what different types of users (Guests, Hosts, and Admins) can do in the system.
 
 ---
 
-## 🧍‍♂️ Guest / User Use Cases
+## 👤 As a Guest / User
 
-| Use Case | Description |
-|-----------|--------------|
-| **Register / Sign Up** | Create a new account using email and password. |
-| **Log In** | Authenticate to access the platform. |
-| **View Properties** | Browse or search for available properties by filters such as location, date, and price. |
-| **View Property Details** | See complete property information including images, reviews, and pricing. |
-| **Book Property** | Reserve a property for selected dates. |
-| **Make Payment** | Complete payment for a booking via online payment gateway. |
-| **View Booking History** | View all previous and current bookings. |
-| **Cancel Booking** | Cancel an existing booking if allowed by the policy. |
-| **Write Review** | Leave a review for a property after a stay. |
-| **Log Out** | End the user session securely. |
+- **As a user, I want to register an account** so that I can access the Airbnb platform.  
+- **As a user, I want to log in** so that I can use my personal account and view my bookings.  
+- **As a user, I want to browse available properties** so that I can find suitable accommodations for my trip.  
+- **As a user, I want to view detailed information about a property** so that I can decide if it meets my needs.  
+- **As a user, I want to book a property** so that I can reserve a place to stay for specific dates.  
+- **As a user, I want to make payments online** so that I can complete my reservation securely.  
+- **As a user, I want to view my booking history** so that I can track all my past and upcoming stays.  
+- **As a user, I want to cancel my booking** so that I can adjust my travel plans if necessary.  
+- **As a user, I want to write a review** so that I can share feedback about my stay.  
+- **As a user, I want to log out** so that I can ensure my account is secure on shared devices.  
 
 ---
 
-## 🏡 Host Use Cases
+## 🏡 As a Host
 
-| Use Case | Description |
-|-----------|--------------|
-| **Register / Log In** | Authenticate as a host on the platform. |
-| **Add Property Listing** | Add a new property with details, images, and pricing. |
-| **Edit Property Details** | Update existing property information. |
-| **Delete Property Listing** | Remove a property from the platform. |
-| **Manage Bookings** | View, accept, or reject booking requests. |
-| **View Reviews** | Read feedback and ratings left by guests. |
-
-> **Note:**  
-> Both **Add Property Listing** and **Edit Property Details** *include* the sub-use case **“Enter Property Details.”**  
-> This represents shared behavior (not a generalization).
+- **As a host, I want to register or log in** so that I can access my hosting dashboard.  
+- **As a host, I want to add a property listing** so that users can view and book it.  
+- **As a host, I want to edit property details** so that I can keep my listing accurate and up to date.  
+- **As a host, I want to delete a property listing** so that I can remove it from the platform when it’s no longer available.  
+- **As a host, I want to manage booking requests** so that I can accept or reject reservations.  
+- **As a host, I want to view guest reviews** so that I can understand guest feedback and improve my listings.  
 
 ---
 
-## 🛠️ Admin Use Cases
+## 🛠️ As an Admin
 
-| Use Case | Description |
-|-----------|--------------|
-| **Manage Users** | Add, update, or deactivate user and host accounts. |
-| **Manage Properties** | Oversee property listings to ensure policy compliance. |
-| **Manage Bookings** | Monitor booking activities and resolve issues. |
-| **View Reports / Analytics** | Generate performance, usage, and financial reports. |
-
----
-
-## 🔁 Use Case Relationships
-
-| Relationship Type | Example |
-|-------------------|----------|
-| **Include** | `Book Property` → includes → `Make Payment` |
-| **Include** | `Add Property Listing` → includes → `Enter Property Details` |
-| **Extend** | `Log In` → extends → `Forgot Password` |
-| **Extend** | `View Property Details` → extends → `Write Review` |
-
----
-
-## 🗺️ System Boundary Overview
-
+- **As an admin, I want to manage users** so that I can ensure all accounts are valid and active.  
+- **As an admin, I want to manage property listings** so
